@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Kwessant</string>
+    <string name="password_visibility_toggle_description">Toggle password visibility</string>
+</resources>

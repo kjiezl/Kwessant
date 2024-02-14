@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/screen_background"
+        />
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/kwessant"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="80dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/app_logo"
+        android:layout_marginTop="5dp"
+        android:hint="Username"
+        android:textColorHint="@color/white"
+        android:paddingLeft="20dp"
+        android:background="@drawable/edt_background"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/edt_name"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:textColorHint="@color/white"
+        android:paddingLeft="20dp"
+        android:background="@drawable/edt_background"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/edt_email"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:paddingLeft="20dp"
+        android:background="@drawable/edt_background"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/white"
+        />
+
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_password"
+        android:text="SIGN UP"
+        android:textColor="@color/darkblue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="15dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btnTogglePasswordVisibility"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/edt_email"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_visibility_off"
+        android:background="@android:color/transparent"
+        android:scaleY="0.7"
+        android:scaleX="0.7"
+        android:contentDescription="@string/password_visibility_toggle_description"
+        />
+
+    <CheckBox
+        android:id="@+id/rememberMeToggle"
+        android:textColor="@color/white"
+        android:buttonTint="@color/white"
+        android:layout_below="@id/edt_password"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stay signed in"
+        android:layout_marginTop="1dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="55dp"
+        android:checked="false"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        />
+
+    <TextView
+        android:id="@+id/txt_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="online"
+        android:textColor="@color/sentColor"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txt_latest_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latest message here"
+        android:textColor="@color/gray"
+        android:visibility="gone"/>
+
+</RelativeLayout>
